@@ -11,7 +11,7 @@
 
 ![screenshot](https://github.com/mapplus/qgis-opengxt-plugin/blob/master/docs/images/opengxt-plugin-processing.png?width=800)
 
-![screenshot](https://github.com/mapplus/qgis-opengxt-plugin/blob/maste/docsr/images/opengxt-plugin-processing-ex01.png?width=800)
+![screenshot](https://github.com/mapplus/qgis-opengxt-plugin/blob/maste/docs/images/opengxt-plugin-processing-ex01.png?width=800)
 
 
 ### License
