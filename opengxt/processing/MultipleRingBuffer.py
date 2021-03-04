@@ -44,7 +44,7 @@ class MultipleRingBufferAlgorithm(QgsProcessingAlgorithm):
     OUTPUT = 'OUTPUT'
 
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('MultipleRingBuffer', string)
 
     def createInstance(self):
         return MultipleRingBufferAlgorithm()

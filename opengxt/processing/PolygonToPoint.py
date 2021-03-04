@@ -39,7 +39,7 @@ class PolygonToPointAlgorithm(QgsProcessingAlgorithm):
     OUTPUT = 'OUTPUT'
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('PolygonToPoint', string)
         
     def createInstance(self):
         return PolygonToPointAlgorithm()

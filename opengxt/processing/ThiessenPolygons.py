@@ -54,13 +54,13 @@ class ThiessenPolygonsAlgorithm(QgsProcessingAlgorithm):
     OUTPUT = 'OUTPUT'
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('ThiessenPolygons', string)
         
     def createInstance(self):
         return ThiessenPolygonsAlgorithm()
         
     def name(self):
-        return 'ThiessenPolygonsAlgorithm'.lower()
+        return 'ThiessenPolygons'.lower()
         
     def displayName(self):
         return self.tr('Thiessen Polygons')

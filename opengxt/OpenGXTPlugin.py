@@ -27,8 +27,15 @@ __revision__ = '$Format:%H$'
 import os
 import sys
 import inspect
+import webbrowser
 
-from qgis.core import QgsProcessingAlgorithm, QgsApplication
+from qgis.PyQt.QtCore import (QCoreApplication, 
+                              QTranslator,
+                              QSettings)
+                              
+from qgis.core import (QgsProcessingAlgorithm, 
+                       QgsApplication)
+                       
 from .processing.OpenGXTProvider import OpenGXTProvider
 
 cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
@@ -40,6 +47,15 @@ class OpenGXTPlugin(object):
 
     def __init__(self):
         self.provider = None
+        
+        self.plugin_dir = os.path.dirname(__file__)
+        locale = QSettings().value("locale/userLocale")[0:2]
+        locale_path = os.path.join(self.plugin_dir, "i18n", "opengxt_{}.qm".format(locale))
+
+        if os.path.exists(locale_path):
+            self.translator = QTranslator()
+            self.translator.load(locale_path)
+            QCoreApplication.installTranslator(self.translator)
 
     def initProcessing(self):
         """Init Processing provider for QGIS >= 3.8."""
@@ -51,3 +67,6 @@ class OpenGXTPlugin(object):
 
     def unload(self):
         QgsApplication.processingRegistry().removeProvider(self.provider)
+
+    def showHelp(self):
+        webbrowser.open("https://github.com/mangosystem/oepngxt")

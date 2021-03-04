@@ -92,13 +92,13 @@ class CreateWindRoseMapsAlgorithm(QgsProcessingAlgorithm):
     DEFAULT_SEGS = 32
 
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('CreateWindRoseMaps', string)
 
     def createInstance(self):
         return CreateWindRoseMapsAlgorithm()
 
     def name(self):
-        return 'CreateWindRoseMapsAlgorithm'.lower()
+        return 'CreateWindRoseMaps'.lower()
 
     def displayName(self):
         return self.tr('Create WindRose Maps')

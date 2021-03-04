@@ -54,7 +54,7 @@ class CreateRingMapsAlgorithm(QgsProcessingAlgorithm):
     GAPS = 1
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('CreateRingMaps', string)
         
     def createInstance(self):
         return CreateRingMapsAlgorithm()

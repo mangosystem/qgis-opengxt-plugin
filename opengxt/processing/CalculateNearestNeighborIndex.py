@@ -41,7 +41,7 @@ class NearestNeighborIndexAlgorithm(QgsProcessingAlgorithm):
     OUTPUT = 'OUTPUT'
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('NearestNeighborIndex', string)
         
     def createInstance(self):
         return NearestNeighborIndexAlgorithm()

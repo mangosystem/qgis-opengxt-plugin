@@ -56,7 +56,7 @@ class RasterEuclideanDistanceAnalysisAlgorithm(QgsProcessingAlgorithm):
     RASTER_TYPES = ['Float32', 'Float64', 'Int32']
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('RasterEuclideanDistanceAnalysis', string)
         
     def createInstance(self):
         return RasterEuclideanDistanceAnalysisAlgorithm()

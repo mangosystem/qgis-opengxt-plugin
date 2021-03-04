@@ -38,7 +38,7 @@ from qgis.core import (Qgis,
                        QgsProcessingProvider,
                        QgsMessageLog
                       )
-					  
+
 from qgis import processing
 from processing.core.ProcessingConfig import Setting, ProcessingConfig
 from processing.script import ScriptUtils
@@ -124,7 +124,7 @@ class OpenGXTProvider(QgsProcessingProvider):
 
         This string should be short (e.g. "Lastools") and localised.
         """
-        return self.tr('OpenGXT - UN GeoAnalysis')
+        return QCoreApplication.translate("OpenGXT", "OpenGXT - UN GeoAnalysis")
 
     def icon(self):
         """

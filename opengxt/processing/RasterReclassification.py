@@ -50,7 +50,7 @@ class RasterReclassificationAlgorithm(QgsProcessingAlgorithm):
     RASTER_TYPES ={'Byte':'B','UInt16':'H','Int16':'h','UInt32':'I','Int32':'i','Float32':'f','Float64':'d'}
     
     def tr(self, string):
-        return QCoreApplication.translate('Processing', string)
+        return QCoreApplication.translate('RasterReclassification', string)
         
     def createInstance(self):
         return RasterReclassificationAlgorithm()
