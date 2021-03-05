@@ -63,10 +63,10 @@ class RasterExtractByAttributesAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Raster Extract by Attributes')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Raster'
+        return QCoreApplication.translate('OpenGXT', 'Raster')
         
     def shortHelpString(self):
         return self.tr('Raster Extract by Attributes.')

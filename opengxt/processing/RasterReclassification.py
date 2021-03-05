@@ -62,10 +62,10 @@ class RasterReclassificationAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Raster Reclassification')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Raster'
+        return QCoreApplication.translate('OpenGXT', 'Raster')
         
     def shortHelpString(self):
         return self.tr('Reclassifies the values in a raster.')

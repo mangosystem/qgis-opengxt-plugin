@@ -56,10 +56,10 @@ class MultipleRingBufferAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Multiple Ring Buffer')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Vector'
+        return QCoreApplication.translate('OpenGXT', 'Vector')
 
     def shortHelpString(self):
         return self.tr('Creates multiple buffers at specified distances around the input features.')

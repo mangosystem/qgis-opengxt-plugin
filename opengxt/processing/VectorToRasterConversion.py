@@ -67,10 +67,10 @@ class VectorToRasterConversionAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Vector To Raster Conversion')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Raster'
+        return QCoreApplication.translate('OpenGXT', 'Raster')
 
     def shortHelpString(self):
         return self.tr('Converts feature layer to raster dataset.')

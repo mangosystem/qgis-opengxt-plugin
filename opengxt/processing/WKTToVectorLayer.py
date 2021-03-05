@@ -53,10 +53,10 @@ class WKTToVectorAlgorithm(QgsProcessingAlgorithm):
         return self.tr('WKT to Vector Layer')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Vector'
+        return QCoreApplication.translate('OpenGXT', 'Vector')
         
     def shortHelpString(self):
         return self.tr('Converts WKT(Well Known Text) text to features')

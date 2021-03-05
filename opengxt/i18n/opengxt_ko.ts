@@ -23,12 +23,24 @@
 <context>
     <name>PolygonToPoint</name>
     <message>
-        <source>Vector</source>
-        <translation>벡터 분석</translation>
-    </message>
-    <message>
         <source>Polygon To Point</source>
         <translation>폴리곤을 포인트로 변환</translation>
+    </message>
+    <message>
+        <source>Converts polygon feature layer to point features.</source>
+        <translation>폴리곤 객체를 포인트(중심점, 폴리곤 내 포함) 객체로 변환합니다.</translation>
+    </message>
+    <message>
+        <source>Input Polygon Layer</source>
+        <translation>입력 폴리곤 레이어</translation>
+    </message>
+    <message>
+        <source>Point on Surface</source>
+        <translation>폴리곤 내에 포함</translation>
+    </message>
+    <message>
+        <source>Output Points</source>
+        <translation>출력 포인트</translation>
     </message>
 </context>
 </TS>

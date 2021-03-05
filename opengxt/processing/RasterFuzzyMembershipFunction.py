@@ -67,7 +67,7 @@ class RasterFuzzyMembershipFunctionAlgorithm(QgsProcessingAlgorithm):
         return self.tr(self.groupId())
         
     def groupId(self):
-        return 'Raster'
+        return QCoreApplication.translate('OpenGXT', 'Raster')
         
     def shortHelpString(self):
         return self.tr('Transforms the input raster into a 0 to 1 scale, indicating the strength of a membership in a set, based on a specified fuzzification algorithm.')

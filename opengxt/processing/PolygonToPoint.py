@@ -51,20 +51,20 @@ class PolygonToPointAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Polygon To Point')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Vector'
+        return QCoreApplication.translate('OpenGXT', 'Vector')
         
     def shortHelpString(self):
-        return self.tr('Converts polygon feature layer to point features')
+        return self.tr('Converts polygon feature layer to point features.')
         
     def initAlgorithm(self, config=None):
         self.addParameter(QgsProcessingParameterFeatureSource(self.INPUT, self.tr('Input Polygon Layer'), [QgsProcessing.TypeVectorPolygon]))
         
         self.addParameter(QgsProcessingParameterBoolean(self.POINTONSURFACE, self.tr('Point on Surface'), False, optional=True))
         
-        self.addParameter(QgsProcessingParameterFeatureSink(self.OUTPUT, self.tr('Points'), QgsProcessing.TypeVectorPoint))
+        self.addParameter(QgsProcessingParameterFeatureSink(self.OUTPUT, self.tr('Output Points'), QgsProcessing.TypeVectorPoint))
         
     def processAlgorithm(self, parameters, context, feedback):
         source = self.parameterAsSource(parameters, self.INPUT, context)

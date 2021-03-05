@@ -2,6 +2,7 @@
 
 * [UN OpenGIS Initiative](http://unopengis.org/) Working Group 3 – Geo-Analysis
 * Prototype project for using OpenGXT library in QGIS
+* Supports QGIS version 3.8 or higher 
 
 ### How to use
 * Clone or download 

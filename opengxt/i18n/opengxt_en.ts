@@ -23,12 +23,24 @@
 <context>
     <name>PolygonToPoint</name>
     <message>
-        <source>Vector</source>
-        <translation>Vector</translation>
-    </message>
-    <message>
         <source>Polygon To Point</source>
         <translation>Polygon To Point</translation>
+    </message>
+    <message>
+        <source>Converts polygon feature layer to point features.</source>
+        <translation>Converts polygon feature layer to point features.</translation>
+    </message>
+    <message>
+        <source>Input Polygon Layer</source>
+        <translation>Input Polygon Layer</translation>
+    </message>
+    <message>
+        <source>Point on Surface</source>
+        <translation>Point on Surface</translation>
+    </message>
+    <message>
+        <source>Output Points</source>
+        <translation>Output Points</translation>
     </message>
 </context>
 </TS>

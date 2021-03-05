@@ -68,10 +68,10 @@ class RasterEuclideanDistanceAnalysisAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Raster Euclidean Distance Analysis')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Raster'
+        return QCoreApplication.translate('OpenGXT', 'Raster')
         
     def shortHelpString(self):
         return self.tr('Calculates, for each cell, the Euclidean distance to the closest source.')

@@ -53,10 +53,10 @@ class NearestNeighborIndexAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Nearest Neighbor Index')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Spatial Statistics'
+        return QCoreApplication.translate('OpenGXT', 'Spatial Statistics')
         
     def shortHelpString(self):
         return self.tr('Calculates Nearest Neighbor Index(NNI)')

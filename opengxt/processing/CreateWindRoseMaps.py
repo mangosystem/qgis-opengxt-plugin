@@ -104,10 +104,10 @@ class CreateWindRoseMapsAlgorithm(QgsProcessingAlgorithm):
         return self.tr('Create WindRose Maps')
         
     def group(self):
-        return self.tr(self.groupId())
+        return self.groupId()
         
     def groupId(self):
-        return 'Vector'
+        return QCoreApplication.translate('OpenGXT', 'Vector')
 
     def shortHelpString(self):
         return self.tr('Create thiessen polygons from points.')
